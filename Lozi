@@ -1,0 +1,20 @@
+# از کاربر ورودی بگیر
+Number = int(input("Enter a number: "))
+# قسمت بالای لوزی
+for N in range (1 , Number + 1 ):
+    # فضای پرینت
+    for M in range (Number - N):
+        print (" " , end= "")
+    # پرینت ستاره
+    for O in range (N):
+        print("*" , end=  " " )
+        print()
+# قسمت پایین لوزی
+for N in range (Number - 1 , 0 , -1):
+    # فضای پرینت
+    for M in range (Number - N):
+        print(" " , end= "")
+    # پرینت ستاره
+    for O in range (N):
+        print("*" , end=" ")
+    print()
