@@ -1,0 +1,3 @@
+A = "alireza mohammadi"
+ali = A [2:12:3]
+print(ali)
