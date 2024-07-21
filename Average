@@ -1,0 +1,20 @@
+# متغیر برای مجموع کل و تعداد اعداد وارد شده
+total_sum = 0
+count = 0
+# از حلقه وایل برای وارد کردن ورودی به تعداد زیاد استفاده میکنیم
+while True:
+    # از کاربر عدد میخواهیم عدد وارد کند
+    num = float(input("Enter a number (enter 0 to calculate average): "))
+    # بررسی میکنیم ببینیم عدد وارد شده 0 هست یا خیر
+    if num == 0:
+        # اگر عددی که وارد شده 0 باشه میانگین را نمایش میدهیم
+        if count == 0:
+            print ("No numbers entered. Cannot calculate average.")
+        else:
+            average = total_sum / count
+            print (f"The average of the entered numbers is: {average}")
+        break 
+            #  از حلفه خارج میشویم
+        # اگر عددی که وارد شد 0 نبود، آن را به جمع کل اضافه میکنیم و تعداد را افزایش میدهیم
+    total_sum += num
+    count += 1
