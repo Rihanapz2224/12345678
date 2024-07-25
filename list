@@ -1,0 +1,5 @@
+# لیست
+list =  ["Ali" , "Reza" , "Mina" , "Mona"]
+# چاپ کردن لیست بدون استفاده از براکت، کاما و کوتیشن
+for m in list:
+    print(m , end = "       ")
