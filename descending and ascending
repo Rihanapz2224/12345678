@@ -1,0 +1,20 @@
+# ووردی را از کاربر بگیریم
+Numbers = []
+for n in range(5):
+    Number = int(input("Enter the number"))
+    Numbers.append(Number)
+    # اعداد را به صورت صعودی مرتب میکنیم
+for n in range(len(Numbers)):
+    for m in range(n + 1 , len(Numbers)):
+        if Numbers[n] > Numbers[m]:
+            Numbers[n] , Numbers[m] = Numbers[m] , Numbers[n]
+# نمایش اعداد به صورت صعودی
+print("Display numbers in ascending order :" , Numbers)
+# اعداد را به صورت نزولی مرتب میکنیم
+for n in range(len(Numbers)):
+    for m in range(n + 1 , len(Numbers)):
+        if Numbers[n] < Numbers[m]:
+            Numbers[n] , Numbers[m] = Numbers[m] , Numbers[n]
+# نمایش اعداد به صورت نزولی
+print("Display numbers in descending order" , Numbers)
+
