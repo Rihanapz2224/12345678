@@ -1,0 +1,16 @@
+# دریافت ورودی از کاربر برای تعیین بازه
+start = int(input("Enter the first number:")) 
+ # عدد شروع
+end = int(input("Enter the last number:")) 
+ # عدد پایان
+# ایجاد یک لیست خالی برای ذخیره اعداد بخش‌پذیر بر 15
+divisible_15 = []
+# بررسی عدد اول تا عدد آخر
+for number in range(start, end + 1):
+    # بررسی اینکه آیا عدد بر 15 بخش‌ پذیر است
+    if number % 15 == 0:
+        divisible_15.append(number)  # اگر بخش‌ پذیر بود، به لیست اضافه می کنیم
+# نمایش اعداد بخش‌ پذیر بر 15
+print("numbers between", start, "و", end, "which are divisible by 15:", divisible_15)
+# نمایش تعداد اعداد بخش‌ پذیر بر 15
+print("Number of numbers divisible by 15:", len(divisible_15))
